@@ -13,11 +13,29 @@ read_len	param
 90(bp)	-n 2 -o 1 -e 1
 
 4. PE mapping
-5. samtools mpileup -Q 0 -q 17
 
+4.5 rm repetitivr hits (?)
 
+5. samtools mpileup -Q 30 (?) -q 17 -d 1000000 -f $ref   $dir-all.sorted.bam
+
+Chr1  110803  A       0
+
+6. reSeqPrintSample.indel.fast.strAssign (penguin server) ../../S_lycopersicum_chromosomes.2.40.fa
+sample-speciesA-1column pileup-file speciesA 2 2 0.3
+
+1-column genotype for speciesA
+
+7. reSeqPrintRefChr to generate ref info (3 columns: chr1 123 A)
 
 
 
 
 SV
+1. same
+2. bwa aln (sai)
+read_len	param
+44(bp)	-n 1 -o 1 -e 0
+75(bp)	-n 2 -o 1 -e 1
+90(bp)	-n 2 -o 1 -e 1
+3. both unique, rm PE dup
+
