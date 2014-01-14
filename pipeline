@@ -4,6 +4,9 @@ SNP
 
 PE mapping
 1. raw reads -> remove duplicates (both read identical)
+
+perl /home/linyong/bin/drop_dup_both_end.pl -opre XG26  ../../../hs738/XG26_1_clean.fq.gz  ../../../hs738/XG26_2_clean.fq.gz
+
 2. trim adaptor & low quality (remove read pair; trim part of reads)
 3. bwa aln (sai)
 PE mapping parameters for identical read lengths
@@ -11,7 +14,7 @@ read_len	param
 44(bp)	-n 1 -o 1 -e 0
 75(bp)	-n 2 -o 1 -e 1
 90(bp)	-n 2 -o 1 -e 1
-
+101(bp) -n 3 -o 1 -e 2 
 4. PE mapping
 
 4.5 rm repetitivr hits (?)
