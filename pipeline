@@ -30,8 +30,8 @@ sample-speciesA-1column pileup-file speciesA 2 2 0.3
 
 7. reSeqPrintRefChr to generate ref info (3 columns: chr1 123 A)
 
-
-
+mapping 1001-bp seq from wild watermelon to 97103
+nohup  bwa bwasw  -f wild.1k.seq.sam -t 10  watermelon_v1.genome   wild.1k.seq.fasta  &
 
 SV
 1. same
