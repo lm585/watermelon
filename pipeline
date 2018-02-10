@@ -15,6 +15,10 @@ read_len	param
 75(bp)	-n 2 -o 1 -e 1
 90(bp)	-n 2 -o 1 -e 1
 101(bp) -n 3 -o 1 -e 2 
+
+###for SE mapping, Nature Genetics paper]
+### 90(bp),	Unique non-dup. reads -n 3 –o 1 –e 1 
+
 4. PE mapping
 
 4.5 rm repetitivr hits (?)
